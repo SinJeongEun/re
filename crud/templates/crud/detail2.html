@@ -1,0 +1,9 @@
+{% extends 'crud/layout.html' %}
+
+{% block content %}
+ 
+<form method='POST'>{% csrf_token %}
+        {{form.as_table}}
+    <button class="btn-default" type="submit" value="save">댓글수정</button>
+</form>
+{% endblock %}

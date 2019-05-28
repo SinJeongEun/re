@@ -1,0 +1,13 @@
+{% extends 'crud/layout.html' %}
+
+{% block content %}
+    <form method= 'POSt'>
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <input  class="btn btn-outline-danger" type="submit" value="댓글쓰기">
+        
+    </form>
+   
+{% endblock %}
